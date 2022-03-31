@@ -28,12 +28,6 @@ public:
 bool ledGlows;
 };
 
-template<typename T1>
-class IAlerter
-{
-public:
-T1 IAlert_p;
-};
 
 class StatsAlerter
 {
