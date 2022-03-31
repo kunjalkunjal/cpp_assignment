@@ -25,7 +25,7 @@ public:
 bool ledGlows;
 };
 
-template<class* T1,class* T2>
+template<typename* T1,typename* T2>
 class IAlerter
 {
 public:
