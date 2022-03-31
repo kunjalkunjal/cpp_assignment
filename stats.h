@@ -12,6 +12,7 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
 }
 
+typedef class& IAlerter;
 
 class EmailAlert
 {
@@ -25,13 +26,6 @@ public:
     bool ledGlows;
 };
 
-template<typename T1,typename T2>
-class IAlerter
-{
-public:
-    T1 IAlert_p1;
-    T2 IAlert_p2;
-};
 
 class StatsAlerter
 {
