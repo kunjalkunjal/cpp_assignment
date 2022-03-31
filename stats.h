@@ -24,10 +24,11 @@ public:
 bool ledGlows;
 };
 
+template<typename T1>
 class IAlerter
 {
 public:
-bool IAlert_p;
+T1 IAlert_p;
 };
 
 class StatsAlerter
