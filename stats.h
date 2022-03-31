@@ -8,9 +8,13 @@ float max;
 float min;
 };
 
+typedef class IAlerter;
+
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
 }
+
+
 
 class EmailAlert
 {
@@ -34,9 +38,8 @@ T1 IAlert_p;
 class StatsAlerter
 {
 public:
-void checkAndAlert(const std::vector<float>&)
+void checkAndAlert(const std::vector<float>&,std::vector<IAlerter*>& )
 {}
 
 };
-
 Stats computedStats;
