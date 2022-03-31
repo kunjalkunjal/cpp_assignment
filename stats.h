@@ -13,7 +13,6 @@ namespace Statistics {
 }
 
 
-
 class EmailAlert
 {
 public:
@@ -26,7 +25,7 @@ public:
 bool ledGlows;
 };
 
-template<typename T1>
+template<class* T1,class* T2>
 class IAlerter
 {
 public:
