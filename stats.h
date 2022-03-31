@@ -1,4 +1,7 @@
 #include <vector>
+#include<stdio.h>
+
+typedef float Stats;
 
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
@@ -7,13 +10,13 @@ namespace Statistics {
 class EmailAlert
 {
 public:
-int8_t emailSent;
+bool emailSent;
 };
 
 class LEDAlert
 {
 public:
-int8_t ledGlows;
+bool ledGlows;
 };
 
 template<typename T1>
@@ -21,7 +24,7 @@ class IAlerter
 {
 public:
 T1* IAlert_p;
-}
+};
 
 class StatsAlerter
 {
