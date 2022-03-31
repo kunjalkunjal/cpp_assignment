@@ -3,9 +3,9 @@
 
 class Stats{
 public:
-float average;
-float max;
-float min;
+    float average;
+    float max;
+    float min;
 };
 
 namespace Statistics {
@@ -16,28 +16,29 @@ namespace Statistics {
 class EmailAlert
 {
 public:
-bool emailSent;
+    bool emailSent;
 };
 
 class LEDAlert
 {
 public:
-bool ledGlows;
+    bool ledGlows;
 };
 
-template<typename* T1,typename* T2>
+template<typename T1,typename T2>
 class IAlerter
 {
 public:
-T1 IAlert_p;
+    T1 IAlert_p1;
+    T2 IAlert_p2;
 };
 
 class StatsAlerter
 {
 public:
-float l_maxthreshold;
-std::vector<IAlerter*> l_alrerters;
-void checkAndAlert(const std::vector<float>& )
+    float l_maxthreshold;
+    std::vector<IAlerter*> l_alrerters;
+    void checkAndAlert(const std::vector<float>& )
 {}
 
 };
