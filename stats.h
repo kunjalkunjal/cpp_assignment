@@ -8,8 +8,6 @@ float max;
 float min;
 };
 
-typedef class IAlerter;
-
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
 }
@@ -28,12 +26,21 @@ public:
 bool ledGlows;
 };
 
+template<typename T1>
+class IAlerter
+{
+public:
+T1 IAlert_p;
+};
 
 class StatsAlerter
 {
 public:
-void checkAndAlert(const std::vector<float>&,std::vector<IAlerter*>& )
+float l_maxthreshold;
+std::vector<IAlerter*> l_alrerters;
+void checkAndAlert(const std::vector<float>& )
 {}
 
 };
+
 Stats computedStats;
