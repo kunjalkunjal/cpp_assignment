@@ -12,7 +12,7 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
 }
 
-typedef class& IAlerter;
+typedef class IAlerter;
 
 class EmailAlert
 {
