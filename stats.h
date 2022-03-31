@@ -1,7 +1,12 @@
 #include <vector>
 #include<stdio.h>
 
-typedef float Stats;
+class Stats{
+public:
+float average;
+float max;
+float min;
+};
 
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& );
@@ -33,3 +38,5 @@ void checkAndAlert(const std::vector<float>&)
 {}
 
 };
+
+Stats computedStats;
